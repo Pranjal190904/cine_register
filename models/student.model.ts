@@ -8,6 +8,7 @@ interface IStudent extends Document {
     residency: string,
     email: string,
     phone: string,
+    password: string,
     isVerified: boolean
 }
 
@@ -19,6 +20,7 @@ const StudentSchema = new Schema<IStudent>({
     residency: { type: String, required: true },
     email: { type: String, required: true },
     phone: { type: String, required: true },
+    password: { type: String},
     isVerified: { type: Boolean, required: true, default: false }
 });
 
