@@ -6,14 +6,14 @@ interface IOption {
 }
 
 interface IQuestion extends Document {
-  questId: number;
+  quesId: number;
   question: string;
   options: IOption[];
   answer: number;
 }
 
 const questionSchema: Schema<IQuestion> = new Schema({
-  questId: { type: Number, required: true },
+  quesId: { type: Number, required: true },
   question: { type: String, required: true },   
   options: [{
       desc: { type: String, required: true },
