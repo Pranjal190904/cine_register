@@ -7,5 +7,6 @@ const RECAPTCHA_SECRET_KEY:string|undefined= process.env.RECAPTCHA_SECRET_KEY ;
 const EMAIL:string|undefined= process.env.EMAIL;
 const PASS:string|undefined= process.env.PASS;
 const RECAPTCHA_SECRET_KEY_LOGIN:string|undefined= process.env.RECAPTCHA_SECRET_KEY_LOGIN;
+const ACCESS_TOKEN_SECRET:string|undefined = process.env.ACCESS_TOKEN_SECRET; 
 
-export {PORT,DBURI,RECAPTCHA_SECRET_KEY,EMAIL,PASS, RECAPTCHA_SECRET_KEY_LOGIN};
+export {PORT,DBURI,RECAPTCHA_SECRET_KEY,EMAIL,PASS, RECAPTCHA_SECRET_KEY_LOGIN, ACCESS_TOKEN_SECRET};
